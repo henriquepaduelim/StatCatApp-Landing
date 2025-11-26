@@ -2,7 +2,7 @@
 'use client';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShieldAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCanadianMapleLeaf } from '@fortawesome/free-brands-svg-icons';
 import { content } from '@/content';
 
 const Hero = () => {
@@ -20,8 +20,8 @@ const Hero = () => {
         <div className="container mx-auto px-6 z-10">
             {/* Restoring the trust badge */}
             <div className="bg-teal/10 border border-teal/30 rounded-full px-4 py-1 inline-block mb-4">
-                <p className="text-teal text-sm">
-                    <FontAwesomeIcon icon={faShieldAlt} className="mr-2" />
+                <p className="text-white text-sm">
+                    <FontAwesomeIcon icon={faCanadianMapleLeaf} className="mr-2" />
                     {content.hero.badge}
                 </p>
             </div>

@@ -9,7 +9,7 @@ const icons = [faFileSignature, faUsers, faChartLine];
 const featureCards = content.highlights.cards.map((card, index) => ({
   ...card,
   icon: icons[index]
-}));
+}));  
 
 const Highlights = () => {
   return (

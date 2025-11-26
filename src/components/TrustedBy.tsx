@@ -3,7 +3,7 @@ import { content } from '@/content';
 
 const TrustedBy = () => {
     return (
-      <section className="py-12 bg-navy">
+      <section className="py-12 bg-black border-t border-b border-warm-gray-800">
         <div className="container mx-auto px-6">
           <h3 className="text-center text-warm-gray-400 font-semibold uppercase tracking-wider mb-8">
             {content.trustedBy.title}

@@ -11,7 +11,7 @@ export const content = {
     cta: "Book a Demo",
   },
   hero: {
-    badge: "Built for Canadian Football Clubs",
+    badge: "Proudly Canadian",
     title: "The All-In-One Platform to Manage, Train, and Grow Your Club",
     subtitle: "StatCat centralizes everything from athlete onboarding and combine data to team calendars and performance reports. Stop chasing paperwork and start building champions.",
     cta1: "Book a Demo",
