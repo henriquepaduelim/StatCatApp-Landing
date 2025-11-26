@@ -33,7 +33,7 @@ const FaqItem = ({ item, isOpen, onClick }: { item: any, isOpen: boolean, onClic
       </button>
       {isOpen && (
         <div className="pb-6 pr-8">
-          <p className="text-warm-gray-300">{item.answer}</p>
+          <p className="text-white">{item.answer}</p>
         </div>
       )}
     </div>

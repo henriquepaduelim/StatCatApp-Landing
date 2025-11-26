@@ -22,13 +22,13 @@ const featureCards = [
 
 const Highlights = () => {
   return (
-    <section id="features" className="py-20 bg-warm-gray-900">
+    <section id="features" className="py-20 bg-warm-gray-300">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-warm-gray-900">
             Everything Your Club Needs. Nothing It Doesn’t.
           </h2>
-          <p className="text-lg text-warm-gray-400 max-w-2xl mx-auto mt-4">
+          <p className="text-lg text-warm-gray-700 max-w-2xl mx-auto mt-4">
             StatCat eliminates fragmented tools and spreadsheets, giving you a single source of truth to run your entire football operation.
           </p>
         </div>
@@ -37,7 +37,7 @@ const Highlights = () => {
             <div key={index} className="bg-navy/60 p-8 rounded-xl border border-warm-gray-800 transition-transform hover:scale-105 hover:border-teal">
               <FontAwesomeIcon icon={card.icon} className="text-teal mb-4" size="2x" />
               <h3 className="text-xl font-bold text-white mb-3">{card.title}</h3>
-              <p className="text-warm-gray-300">{card.description}</p>
+              <p className="text-white">{card.description}</p>
             </div>
           ))}
         </div>

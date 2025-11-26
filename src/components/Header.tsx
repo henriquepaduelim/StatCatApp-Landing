@@ -17,12 +17,12 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-navy/80 backdrop-blur-md">
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-white font-grotesk">
+        <h1 className="text-2xl font-bold text-black font-grotesk">
           StatCat
         </h1>
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="text-warm-gray-300 hover:text-white transition-colors">
+            <a key={link.name} href={link.href} className="text-black hover:text-red-600 transition-colors">
               {link.name}
             </a>
           ))}
@@ -40,7 +40,7 @@ const Header = () => {
         <div className="md:hidden bg-navy pb-4">
           <nav className="flex flex-col items-center space-y-4">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-warm-gray-300 hover:text-white transition-colors">
+              <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-white hover:text-white transition-colors">
                 {link.name}
               </a>
             ))}

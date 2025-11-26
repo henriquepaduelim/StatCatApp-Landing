@@ -1,10 +1,30 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Sora, Space_Grotesk, Press_Start_2P } from 'next/font/google';
 import "./globals.css";
 
 // Font Awesome configuration
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
+
+const sora = Sora({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-sora',
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-space-grotesk',
+});
+
+const pressStart2P = Press_Start_2P({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-pixel',
+});
 
 export const metadata: Metadata = {
   title: "StatCat | The All-In-One Football Club Management Platform",
@@ -30,14 +50,15 @@ export const metadata: Metadata = {
     description: "Centralize combine data, athlete onboarding, team management, and reporting. Built for Canadian football clubs.",
     images: ['https://statcat.example.com/og-image.png'], // Replace with actual Twitter image URL
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   keywords: ['football club management', 'athlete onboarding', 'combine data', 'team management', 'Ontario football', 'Canadian youth football'],
   icons: {
     icon: '/favicon.ico', // Ensure you have a favicon.ico in the public folder
   }
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -46,7 +67,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${sora.variable} ${spaceGrotesk.variable} ${pressStart2P.variable}`}>
       <body>
         {children}
       </body>

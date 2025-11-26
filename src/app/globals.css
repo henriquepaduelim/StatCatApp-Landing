@@ -6,10 +6,10 @@
 
 @layer base {
   body {
-    @apply bg-navy text-warm-gray-300 antialiased;
+    @apply bg-navy text-warm-gray-900 antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-grotesk text-white;
+    @apply font-grotesk text-warm-gray-900;
   }
 }
 

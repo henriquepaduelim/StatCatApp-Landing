@@ -61,7 +61,7 @@ const Pricing = () => {
                     {tier.features.map((feature) => (
                         <li key={feature} className="flex items-center">
                             <FontAwesomeIcon icon={faCheck} className="text-teal mr-3" />
-                            <span className="text-warm-gray-300">{feature}</span>
+                            <span className="text-white">{feature}</span>
                         </li>
                     ))}
                 </ul>

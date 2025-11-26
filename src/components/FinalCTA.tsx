@@ -7,7 +7,7 @@ const FinalCTA = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white">
               Ready to See StatCat in Action?
             </h2>
-            <p className="text-lg text-warm-gray-300 max-w-2xl mx-auto mt-4 mb-8">
+            <p className="text-lg text-white max-w-2xl mx-auto mt-4 mb-8">
               Schedule a free, no-obligation demo with one of our experts. We’ll walk you through the platform and show you how StatCat can be tailored to your club's exact needs.
             </p>
             <form className="flex flex-col md:flex-row justify-center items-center gap-4 max-w-lg mx-auto">

@@ -29,7 +29,7 @@ const testimonials = [
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-white/5 p-8 rounded-xl border border-warm-gray-800 flex flex-col">
-                <p className="text-warm-gray-300 flex-grow">“{testimonial.quote}”</p>
+                <p className="text-white flex-grow">“{testimonial.quote}”</p>
                 <div className="mt-6">
                   <p className="font-bold text-white">{testimonial.name}</p>
                   <p className="text-sm text-warm-gray-400">{testimonial.role}</p>

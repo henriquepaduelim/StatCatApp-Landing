@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
@@ -26,7 +25,7 @@ const Footer = () => {
             </div>
           <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 md:mb-0">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-warm-gray-300 hover:text-white transition-colors">
+              <a key={link.name} href={link.href} className="text-white hover:text-white transition-colors">
                 {link.name}
               </a>
             ))}

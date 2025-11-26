@@ -15,7 +15,7 @@ const Analytics = () => {
             </p>
             <div className="flex flex-wrap gap-3">
               {metricTiles.map((tile) => (
-                <div key={tile} className="bg-warm-gray-900 border border-warm-gray-800 text-warm-gray-300 rounded-lg px-4 py-2">
+                <div key={tile} className="bg-warm-gray-900 border border-warm-gray-800 text-white rounded-lg px-4 py-2">
                   {tile}
                 </div>
               ))}
