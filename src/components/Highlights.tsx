@@ -1,24 +1,15 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faChartLine, faFileSignature } from '@fortawesome/free-solid-svg-icons';
+import { content } from '@/content';
 
-const featureCards = [
-  {
-    icon: faFileSignature,
-    title: 'Automated Athlete Onboarding',
-    description: 'Capture documents, get approvals, and manage player profiles in one seamless workflow. Approve athletes 5x faster.',
-  },
-  {
-    icon: faUsers,
-    title: 'Centralized Team Management',
-    description: 'Drag-and-drop rosters, manage coaching staff, and keep everyone synced with a central team feed and calendar.',
-  },
-  {
-    icon: faChartLine,
-    title: 'Advanced Combine & Analytics',
-    description: 'Enter metrics, track progress with leaderboards, and generate shareable report cards. One combine and reporting runway.',
-  },
-];
+// Match icons to the content by order.
+const icons = [faFileSignature, faUsers, faChartLine];
+
+const featureCards = content.highlights.cards.map((card, index) => ({
+  ...card,
+  icon: icons[index]
+}));
 
 const Highlights = () => {
   return (
@@ -26,10 +17,10 @@ const Highlights = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-warm-gray-900">
-            Everything Your Club Needs. Nothing It Doesn’t.
+            {content.highlights.title}
           </h2>
           <p className="text-lg text-warm-gray-700 max-w-2xl mx-auto mt-4">
-            StatCat eliminates fragmented tools and spreadsheets, giving you a single source of truth to run your entire football operation.
+            {content.highlights.subtitle}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

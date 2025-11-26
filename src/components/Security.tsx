@@ -1,24 +1,14 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShieldAlt, faLock, faUserShield } from '@fortawesome/free-solid-svg-icons';
+import { content } from '@/content';
 
-const securityFeatures = [
-  {
-    icon: faUserShield,
-    title: 'Role-Based Access Control (RBAC)',
-    description: 'Ensure users only see what they need to, from club admins to individual athletes.'
-  },
-  {
-    icon: faLock,
-    title: 'Data Encryption',
-    description: 'All data, including document uploads and athlete information, is encrypted at rest and in transit.'
-  },
-  {
-    icon: faShieldAlt,
-    title: 'Secure Infrastructure',
-    description: 'Built on enterprise-grade infrastructure to ensure reliability, performance, and security.'
-  }
-];
+const icons = [faUserShield, faLock, faShieldAlt];
+
+const securityFeatures = content.security.features.map((feature, index) => ({
+  ...feature,
+  icon: icons[index]
+}));
 
 const Security = () => {
   return (
@@ -26,10 +16,10 @@ const Security = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Security and Trust You Can Rely On
+            {content.security.title}
           </h2>
           <p className="text-lg text-warm-gray-400 max-w-2xl mx-auto mt-4">
-            We take data security seriously, so you can focus on what matters most.
+            {content.security.subtitle}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

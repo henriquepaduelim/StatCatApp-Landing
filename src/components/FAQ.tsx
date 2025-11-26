@@ -4,27 +4,9 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { content } from '@/content';
 
-const faqData = [
-  {
-    question: 'Is StatCat designed for a specific level of football?',
-    answer: 'StatCat is built for all levels of amateur football, from youth leagues to elite development academies. Its flexible features can be adapted to any club size or complexity.'
-  },
-  {
-    question: 'How does athlete onboarding work?',
-    answer: 'You invite athletes (or their guardians) via email. They are directed to a secure, club-branded portal to fill out forms, upload necessary documents (like proof of age or medical forms), and sign waivers electronically.'
-  },
-  {
-    question: 'Can we customize the combine metrics we track?',
-    answer: 'Yes. While we provide templates for standard football combines, you have the flexibility to add, remove, or create custom metrics to fit your specific testing protocol.'
-  },
-  {
-    question: 'Is our data secure?',
-    answer: 'Absolutely. We use industry-standard encryption for all data in transit and at rest. Our platform includes role-based access control to ensure that only authorized personnel can view sensitive information.'
-  }
-];
-
-const FaqItem = ({ item, isOpen, onClick }: { item: any, isOpen: boolean, onClick: () => void }) => {
+const FaqItem = ({ item, isOpen, onClick }: { item: { question: string, answer: string }, isOpen: boolean, onClick: () => void }) => {
   return (
     <div className="border-b border-warm-gray-800">
       <button onClick={onClick} className="w-full flex justify-between items-center text-left py-6">
@@ -52,11 +34,11 @@ const FAQ = () => {
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Frequently Asked Questions
+            {content.faq.title}
           </h2>
         </div>
         <div>
-          {faqData.map((item, index) => (
+          {content.faq.items.map((item, index) => (
             <FaqItem
               key={index}
               item={item}
