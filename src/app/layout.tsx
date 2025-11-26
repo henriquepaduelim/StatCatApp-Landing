@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Sora, Space_Grotesk, Press_Start_2P } from 'next/font/google';
 import "./globals.css";
+import GoogleAnalytics from '@/components/GoogleAnalytics'; // New import
 
 // Font Awesome configuration
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -70,6 +71,7 @@ export default function RootLayout({
     <html lang="en" className={`${sora.variable} ${spaceGrotesk.variable} ${pressStart2P.variable}`}>
       <body>
         {children}
+        <GoogleAnalytics /> {/* New component */}
       </body>
     </html>
   );
