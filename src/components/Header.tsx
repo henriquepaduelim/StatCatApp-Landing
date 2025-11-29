@@ -26,16 +26,16 @@ const Header = () => {
           </a>
         </nav>
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-black focus:outline-none">
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} size="lg" />
           </button>
         </div>
       </div>
       {isOpen && (
         <div className="md:hidden bg-navy pb-4">
-          <nav className="flex flex-col items-center space-y-4">
+          <nav className="flex flex-col items-center space-y-4 ">
             {content.header.navLinks.map((link) => (
-              <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-white hover:text-white transition-colors">
+              <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-black hover:text-teal transition-colors">
                 {link.name}
               </a>
             ))}

@@ -7,7 +7,7 @@ import { content } from '@/content';
 
 const Hero = () => {
   return (
-    <section className="relative text-center py-20 md:py-32 overflow-hidden">
+    <section className="relative text-center py-4 md:py-8 overflow-hidden">
         <video 
           autoPlay 
           loop 
@@ -18,13 +18,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-black/60 -z-10"></div>
         <div className="container mx-auto px-6 z-10">
-            {/* Restoring the trust badge */}
-            <div className="bg-teal/10 border border-teal/30 rounded-full px-4 py-1 inline-block mb-4">
-                <p className="text-white text-sm">
-                    <FontAwesomeIcon icon={faCanadianMapleLeaf} className="mr-2" />
-                    {content.hero.badge}
-                </p>
-            </div>
+           
 
             <h2 className="text-4xl md:text-6xl font-bold font-grotesk text-white max-w-4xl mx-auto leading-tight">
                 {content.hero.title}
@@ -33,10 +27,7 @@ const Hero = () => {
                 {content.hero.subtitle}
             </p>
             <div className="flex justify-center items-center space-x-4 mt-10">
-                {/* Using content file for CTAs */}
-                <a href="#cta" className="bg-teal text-white font-bold py-3 px-8 rounded-lg hover:bg-teal/90 transition-transform hover:scale-105">
-                    {content.hero.cta1}
-                </a>
+               
 
                 {/* Restoring START button with description */}
                 <div className="flex flex-col items-center">
@@ -46,11 +37,9 @@ const Hero = () => {
                     <p className="text-sm text-white mt-2">{content.hero.startCta.description}</p>
                 </div>
 
-                {/* Restoring the "See in 2 Min" button */}
-                <a href="#video-tour" className="text-white font-semibold py-3 px-8 rounded-lg bg-white/10 hover:bg-white/20 transition-colors">
-                   {content.hero.cta2}
-                </a>
+              
             </div>
+              
         </div>
     </section>
   );

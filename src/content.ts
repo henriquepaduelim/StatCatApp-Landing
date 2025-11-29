@@ -24,7 +24,11 @@ export const content = {
   },
   trustedBy: {
     title: "Trusted by Leading Clubs in Ontario",
-    logos: ['Club Logo 1', 'Club Logo 2', 'Club Logo 3', 'Club Logo 4', 'Club Logo 5'],
+    logos: [
+      { src: '/clubLogo1.png', alt: 'Players To Pro Football' },
+      { src: '/clubLogo2.webp', alt: 'StatCat Sports Analytics' },
+      { src: '/clubLogo3.svg', alt: 'Toronto FC' },
+    ],
   },
   highlights: {
     title: "Everything Your Club Needs. Nothing It Doesn’t.",
@@ -95,8 +99,8 @@ export const content = {
     metricTiles: ['40-Yard Dash', 'Yo-Yo Test', 'Broad Jump', 'Vertical Jump', '3-Cone Drill', 'Shuttle Run'],
     cta: "Explore Analytics",
     placeholder: {
-      title: "[ Dashboard Screenshot Placeholder ]",
-      subtitle: "A clean visual of the analytics dashboard showing leaderboards and player report cards.",
+      imageSrc: '/placeholderDashboard.webp',
+      imageAlt: 'Captura de tela do painel de análise com placares e relatórios de jogadores',
     }
   },
   teamEvents: {
