@@ -18,7 +18,7 @@ const Branding = () => {
         <div className="max-w-4xl mx-auto bg-warm-gray-900 border-2 border-warm-gray-800 rounded-xl p-8 flex flex-row md:flex-col gap-8 items-start">
             {/* Coluna do Tema Padrão */}
             <div className="w-full md:w-1/2 flex flex-col items-center">
-                <h4 className="font-bold text-white text-lg">{content.branding.defaultTheme.title}</h4>
+                <h3 className="font-bold text-white text-lg">{content.branding.defaultTheme.title}</h3>
                 {/* Container da imagem com altura maior e posição relativa */}
                 <div className="relative mt-4 w-full h-[450px] rounded-lg overflow-hidden">
                     <Image
@@ -31,7 +31,7 @@ const Branding = () => {
             </div>
             {/* Coluna do Tema Customizado */}
             <div className="w-full md:w-1/2 flex flex-col items-center">
-                <h4 className="font-bold text-teal text-lg">{content.branding.customTheme.title}</h4>
+                <h3 className="font-bold text-teal text-lg">{content.branding.customTheme.title}</h3>
                 {/* Container da imagem com altura maior e posição relativa */}
                 <div className="relative mt-4 w-full h-[450px] rounded-lg overflow-hidden">
                     <Image

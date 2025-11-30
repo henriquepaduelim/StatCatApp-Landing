@@ -28,7 +28,7 @@ const TeamEvents = () => {
                         <li key={index} className="flex items-start">
                             <FontAwesomeIcon icon={icons[index]} className="text-teal mt-1 mr-4" />
                             <div>
-                                <h4 className="font-semibold text-white">{feature.title}</h4>
+                                <h3 className="font-semibold text-white">{feature.title}</h3>
                                 <p className="text-warm-gray-400">{feature.description}</p>
                             </div>
                         </li>

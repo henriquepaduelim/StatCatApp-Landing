@@ -10,7 +10,7 @@ const FaqItem = ({ item, isOpen, onClick }: { item: { question: string, answer: 
   return (
     <div className="border-b border-warm-gray-800">
       <button onClick={onClick} className="w-full flex justify-between items-center text-left py-6">
-        <h4 className="text-lg font-semibold text-black">{item.question}</h4>
+        <h3 className="text-lg font-semibold text-black">{item.question}</h3>
         <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="text-warm-gray-400" />
       </button>
       {isOpen && (
