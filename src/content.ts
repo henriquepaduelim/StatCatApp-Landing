@@ -23,7 +23,7 @@ export const content = {
     }
   },
   trustedBy: {
-    title: "Trusted by Leading Clubs in all over Canada",
+    title: "Trusted by Leading Clubs all over Canada",
     logos: [
       { src: '/clubLogo1.png', alt: 'Players To Pro Football' },
       { src: '/clubLogo2.webp', alt: 'StatCat Sports Analytics' },
