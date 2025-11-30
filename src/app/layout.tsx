@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Sora, Space_Grotesk, Press_Start_2P } from 'next/font/google';
 import "./globals.css";
-import GoogleAnalytics from '@/components/GoogleAnalytics'; // New import
+import GoogleAnalytics from '@/components/GoogleAnalytics'; 
+import ScrollToTop from '@/components/ScrollToTop';
 
 // Font Awesome configuration
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -72,6 +73,7 @@ export default function RootLayout({
       <body>
         {children}
         <GoogleAnalytics /> {/* New component */}
+        <ScrollToTop /> {/* New component */}
       </body>
     </html>
   );
