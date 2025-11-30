@@ -31,7 +31,7 @@ export const content = {
     ],
   },
   highlights: {
-    title: "Everything Your Club Needs. Nothing It Doesn’t.",
+    title: "Everything Your Club Needs. Nothing It Doesn't.",
     subtitle: "StatCat eliminates fragmented tools and spreadsheets, giving you a single source of truth to run your entire football operation.",
     cards: [
       {
