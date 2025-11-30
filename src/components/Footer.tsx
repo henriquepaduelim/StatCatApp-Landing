@@ -26,7 +26,7 @@ const Footer = () => {
           </nav>
           <div className="flex justify-center space-x-6">
             {content.footer.socialLinks.map((social) => (
-              <a key={social.name} href={social.href} className="text-warm-gray-500 hover:text-teal transition-colors">
+              <a key={social.name} href={social.href} className="text-warm-gray-500 hover:text-teal transition-colors" aria-label={`Follow us on ${social.name.charAt(0).toUpperCase() + social.name.slice(1)}`}>
                 <FontAwesomeIcon icon={iconMap[social.name]} size="lg" />
               </a>
             ))}
