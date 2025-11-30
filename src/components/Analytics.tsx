@@ -29,7 +29,7 @@ const Analytics = () => {
    </a>
    </div>
           </div>
-          <div className="bg-warm-gray-900 border-2 border-warm-gray-800 rounded-xl p-4 h-96 flex items-center justify-center relative overflow-hidden">
+          <div className="bg-warm-gray-900 border-2 border-hidden rounded-xl p-4 h-96 flex items-center justify-center relative overflow-hidden">
             <Image
               src={content.analytics.placeholder.imageSrc}
               alt={content.analytics.placeholder.imageAlt}

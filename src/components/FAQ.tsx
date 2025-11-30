@@ -10,12 +10,12 @@ const FaqItem = ({ item, isOpen, onClick }: { item: { question: string, answer: 
   return (
     <div className="border-b border-warm-gray-800">
       <button onClick={onClick} className="w-full flex justify-between items-center text-left py-6">
-        <h4 className="text-lg font-semibold text-white">{item.question}</h4>
+        <h4 className="text-lg font-semibold text-black">{item.question}</h4>
         <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} className="text-warm-gray-400" />
       </button>
       {isOpen && (
         <div className="pb-6 pr-8">
-          <p className="text-white">{item.answer}</p>
+          <p className="text-warm-gray-800">{item.answer}</p>
         </div>
       )}
     </div>
@@ -33,7 +33,7 @@ const FAQ = () => {
     <section className="py-20 bg-navy">
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">
             {content.faq.title}
           </h2>
         </div>

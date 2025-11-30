@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: "##009fb7",
+        navy: "##1F2937",
         teal: "#ff3562",
         "warm-gray-50": "#F9FAFB",
         "warm-gray-100": "#F3F4F6",

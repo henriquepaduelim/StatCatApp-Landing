@@ -126,11 +126,13 @@ export const content = {
     subtitle: "Reinforce your club's identity with white-label branding. StatCat allows you to customize the platform with your logos and color schemes, providing a professional and unified experience for your athletes and staff.",
     defaultTheme: {
       title: "Default Theme",
-      placeholder: "[ StatCat App UI ]"
+      imageSrc: "/statcatUI.jpeg",
+      imageAlt: "Interface do aplicativo StatCat com o tema padrão"
     },
     customTheme: {
       title: "Your Club's Theme",
-      placeholder: "[ Your Branded App UI ]"
+      imageSrc: "/elite1gk.jpeg",
+      imageAlt: "Interface do aplicativo StatCat com o tema customizado do Elite 1 GK"
     }
   },
   security: {
